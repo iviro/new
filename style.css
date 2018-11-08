@@ -1,0 +1,64 @@
+body {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.block{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #cccccc;
+    font: italic 3em serif;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #123, 0 0 1em #123;
+    color: #ccc;
+    letter-spacing: .3em;
+}
+
+.block-fl {
+    background-color: #ddd;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.fl{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 2px rgb(13, 19, 26), 0 0 1em 1px rgb(58, 69, 80);
+}
+
+.fl01 {background-color: #123; color: white; transition: background-color 5s;}
+.fl02 {background-color: #126; color: white;}
+.fl03 {background-color: #129; color: white;}
+.fl04 {background-color: #12c; color: white;}
+
+.fl05 {background-color: #132; color: white; transition: background-color 5s;}
+.fl06 {background-color: #162; color: white;}
+.fl07 {background-color: #192;}
+.fl08 {background-color: #1c2;}
+
+.fl09 {background-color: #321; color: white; order: 1;}
+.fl10 {background-color: #621; color: white;}
+.fl11 {background-color: #921;}
+.fl12 {background-color: #c21;}
+
+.fl01:hover, .fl05:hover, .fl09:hover {
+    background-color: #ccc; color: white; transition: background-color 1s;
+}
+
+
+@media (max-width:600px) {
+    .fl01, .fl05 {order: 1;}
+}
